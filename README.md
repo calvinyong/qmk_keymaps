@@ -1,2 +1,3 @@
-# qmk_keymaps
-My personal keycaps for my keyboards
+# QMK keymaps
+
+My personal keymaps for my keyboards. I use colemak mod dhm.
