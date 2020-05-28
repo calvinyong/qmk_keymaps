@@ -1,6 +1,6 @@
 MOUSEKEY_ENABLE = no
-RGBLIGHT_ENABLE = no
 EXTRAKEY_ENABLE = yes
+RGBLIGHT_ENABLE = yes
 
 # If you want to change the display of OLED, you need to change here
 SRC +=  ./lib/glcdfont.c \
