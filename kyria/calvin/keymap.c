@@ -28,8 +28,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_COLEMAK] = LAYOUT(
          KC_TAB, KC_Q, KC_W, KC_F, KC_P, KC_B,                                                          KC_J, KC_L, KC_U, KC_Y, KC_SCLN, KC_BSPC,
         KC_LCTL, KC_A, KC_R, KC_S, KC_T, KC_G,                                                          KC_M, KC_N, KC_E, KC_I, KC_O, KC_QUOT,
-        KC_LSFT, KC_Z, KC_X, KC_C, KC_D, KC_V,     KC_ESC, KC_PSCR, TG(_NUMPAD), KC_LALT,               KC_K, KC_H, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT,
-                 XXXXXXX, KC_LGUI, MO(_LOWER),     KC_SPC, KC_LGUI, XXXXXXX, LT(_EXTRA,KC_ENT),         MO(_RAISE), KC_LGUI, KC_RCTL
+        KC_LSFT, KC_Z, KC_X, KC_C, KC_D, KC_V,     KC_ESC, KC_LALT, TG(_NUMPAD), KC_LALT,               KC_K, KC_H, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT,
+                 XXXXXXX, KC_PSCR, MO(_LOWER),     KC_SPC, KC_LGUI, XXXXXXX, LT(_EXTRA,KC_ENT),         MO(_RAISE), KC_RALT, KC_RCTL
     ),
     [_LOWER] = LAYOUT(
         KC_TILD, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                                             KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, _______,
@@ -50,9 +50,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                    _______, _______, _______,       _______, _______, _______, _______,     _______, _______, _______
     ),
     [_EXTRA] = LAYOUT(
-        _______, G(KC_Q), G(KC_W), G(KC_F), G(KC_P), G(KC_B),                                         G(KC_M), G(KC_N), G(KC_E), G(KC_I), _______, _______,
-        _______, G(KC_A), G(KC_R), G(KC_S), G(KC_T), _______,                                         KC_LEFT, KC_DOWN, KC_UP, KC_RGHT,   G(KC_O), _______,
-        _______, _______, _______, A(KC_C), _______, _______,   _______, _______, _______, _______,   G(KC_K), G(KC_H), _______, _______, _______, _______,
+        _______, G(KC_Q), G(KC_W), G(KC_F), G(KC_P), G(KC_B),                                         _______, _______, _______, _______, _______, _______,
+        _______, G(KC_A), G(KC_R), G(KC_S), G(KC_T), G(KC_G),                                         KC_LEFT, KC_DOWN, KC_UP, KC_RGHT,   _______, _______,
+        _______, _______, _______, A(KC_C), _______, _______,   _______, _______, _______, _______,   _______, _______, _______, _______, _______, _______,
                                    _______, _______, _______,   G(KC_SPC), _______, _______, _______,   _______, _______, _______
     ),
     [_NUMPAD] = LAYOUT(
