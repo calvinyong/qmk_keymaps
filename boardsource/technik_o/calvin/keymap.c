@@ -23,6 +23,7 @@ enum layers {
     _ADJUST,
     _EXTRA,
     _QWERTY,
+    _GAMING,
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -48,10 +49,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_ADJUST] = LAYOUT_ortho_4x12(
-        _______,     KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
-        KC_CAPS,     _______, KC_INS,  KC_HOME, KC_PGUP, _______, _______, RGB_TOG, RGB_HUI, KC_F11,  KC_F12,  _______,
-        _______,     _______, KC_DEL,  KC_END,  KC_PGDN, _______, _______, RGB_MOD, RGB_M_R, RGB_M_P, RGB_VAI, _______,
-        TG(_QWERTY), _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
+        _______,     KC_F1,       KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
+        _______,     _______,     KC_INS,  KC_HOME, KC_PGUP, _______, _______, RGB_TOG, RGB_HUI, KC_F11,  KC_F12,  _______,
+        _______,     _______,     KC_DEL,  KC_END,  KC_PGDN, _______, _______, RGB_MOD, RGB_M_R, RGB_M_P, RGB_VAI, _______,
+        TG(_QWERTY), TG(_GAMING), _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
     ),
 
     [_EXTRA] = LAYOUT_ortho_4x12(
@@ -66,6 +67,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, _______,
         _______, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    _______, _______, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
+    ),
+
+    [_GAMING] = LAYOUT_ortho_4x12(
+        _______, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    _______, _______, _______, _______, _______, _______,
+        _______, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    _______, _______, _______, _______, _______, _______,
+        _______, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    _______, _______, _______, _______, KC_UP,   _______,
+        _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_RGHT
     ),
 };
 
